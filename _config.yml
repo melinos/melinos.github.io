@@ -4,12 +4,11 @@
 
 title: Melinos Averkiou # the website title (if blank, full name will be used instead)
 first_name: Melinos
-middle_name: # R.
+middle_name: 
 last_name: Averkiou
 email: m.averkiou@cyens.org.cy
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  #A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-  Melinos Averkiou website
+  Melinos personal website
 footer_text: >
   #Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   #Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -17,7 +16,7 @@ footer_text: >
 keywords: #jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 👨‍💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://melinos.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -56,16 +55,16 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: melinos # your GitHub user name
-gitlab_username: melinos # your GitLab user name
-twitter_username: maverkiou # your Twitter handle
-linkedin_username: # your LinkedIn user name
+github_username:  # your GitHub user name (melinos)
+gitlab_username:  # your GitLab user name (melinos)
+twitter_username: # your Twitter handle (maverkiou)
+linkedin_username: melinos-averkiou-00964b34 # your LinkedIn user name
 scholar_userid: U4svWXwAAAAJ # your Google Scholar ID
 orcid_id: 0000-0003-1814-7134 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: N-5509-2014 # your ID on Publons
-research_gate_profile: https://www.researchgate.net/profile/Melinos-Averkiou # your profile on ResearchGate
+research_gate_profile: Melinos-Averkiou # your profile on ResearchGate
 blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
@@ -75,9 +74,9 @@ stackoverflow_id: #your stackoverflow id
 
 contact_note: >
   #You can even add a little note about which of these is the best way to reach you.
-  email is the best way to reach me
+  Feel free to drop me a line via email
   
-google_analytics:  # your google-analytics ID (format: UA-XXXXXXXXX)
+google_analytics: G-HHH9XH4XYC # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
@@ -86,16 +85,16 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: melinos #al-folio  # your blog must have a name for it to show up in the nav bar
+blog_name: # your blog must have a name for it to show up in the nav bar
 blog_description: #a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+permalink: # /blog/:year/:title/
 
 # Pagination
 pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # -----------------------------------------------------------------------------
@@ -207,8 +206,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Averkiou
+  first_name: [Melinos]
 
   style: apa
   locale: en
@@ -264,7 +263,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false  # enables google analytics
+enable_google_analytics:    true  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
