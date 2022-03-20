@@ -1,72 +1,229 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{CVPR={Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}}
+@string{ICCV={Proc. IEEE/CVF International Conference on Computer Vision (ICCV)}}
+@string{3DV={Proc. International Conference on 3D Vision (3DV)}}
+@string{TOG={ACM Transactions on Graphics}}
+@string{SIGG={ACM Transactions on Graphics (Proc. SIGGRAPH)}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@string{CGF={Computer Graphics Forum}}
+@string{CGF_EG={Computer Graphics Forum (Proc. Eurographics)}}
+@string{CGF_SGP={Computer Graphics Forum (Proc. SGP)}}
+
+
+%%% 2021
+
+@article{Deligiorgi:2021:ANNFASS,
+  title = {A 3D digitisation workflow for architecture-specific annotation of built heritage},
+  journal = {Journal of Archaeological Science: Reports},
+  volume = {37},
+  pages = {102787},
+  year = {2021},
+  issn = {2352-409X},
+  doi = {https://doi.org/10.1016/j.jasrep.2020.102787},
+  url = {https://www.sciencedirect.com/science/article/pii/S2352409X20305782},
+  author = {Marissia Deligiorgi and Maria I. Maslioukova and Melinos Averkiou and Andreas C. Andreou and Pratheba Selvaraju and Evangelos Kalogerakis and Gustavo Patow and Yiorgos Chrysanthou and George Artopoulos},
+  keywords = {Convolutional neural network, Monument, Architectural structure, 3D data, Deep learning},
+  abstract = {Contemporary discourse points to the central role that heritage plays in the process of enabling groups of various cultural or ethnic background to strengthen their feeling of belonging and sharing in society. Safeguarding heritage is also valued highly in the priorities of the European Commission. As a result, there have been several long-term initiatives involving the digitisation, annotation and cataloguing of tangible cultural heritage in museums and collections. Specifically, for built heritage, a pressing challenge is that historical monuments such as buildings, temples, churches or city fortification infrastructures are hard to document due to their historic palimpsest; spatial transformations, actions of destruction, reuse of material, or continuous urban development that covers traces and changes the formal integrity and identity of a cultural heritage site. The ability to reason about a monument’s form is crucial for efficient documentation and cataloguing. This paper presents a 3D digitisation workflow through the involvement of reality capture technologies for the annotation and structure analysis of built heritage with the use of 3D Convolutional Neural Networks (3D CNNs) for classification purposes. The presented workflow contributes a new approach to the identification of a building’s architectural components (e.g., arch, dome) and to the study of the stylistic influences (e.g., Gothic, Byzantine) of building parts. In doing so this workflow can assist in tracking a building’s history, identifying its construction period and comparing it to other buildings of the same period. This process can contribute to educational and research activities, as well as facilitate the automated classification of datasets in digital repositories for scholarly research in digital humanities.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@inproceedings{Georgiou:2021:PUT, 
+  title={Projective Urban Texturing},
+  author={Yiangos Georgiou and Melinos Averkiou and Tom Kelly and Evangelos Kalogerakis},
+  booktitle={3DV},
+  year={2021},
+  pages = {1034-1043},
+  keywords = {geometry;training;three-dimensional displays;shape;urban areas;pipelines;layout},
+  doi = {10.1109/3DV53792.2021.00111},
+  url = {https://doi.ieeecomputersociety.org/10.1109/3DV53792.2021.00111},
+  month = {dec},
+  abstract = {This paper proposes a method for automatic generation of textures for 3D city meshes in immersive urban environments. Many recent pipelines capture or synthesize large quantities of city geometry using scanners or procedural modeling pipelines. Such geometry is intricate and realistic, however the generation of photo-realistic textures for such large scenes remains a problem. We propose to generate textures for input target 3D meshes driven by the textural style present in readily available datasets of panoramic photos capturing urban environments. Re-targeting such 2D datasets to 3D geometry is challenging because the underlying shape, size, and layout of the urban structures in the photos do not correspond to the ones in the target meshes. Photos also often have objects (e.g., trees, vehicles) that may not even be present in the target geometry. To address these issues we present a method, called Projective Urban Texturing (PUT), which re-targets textural style from real-world panoramic images to unseen urban meshes. PUT relies on contrastive and adversarial training of a neural architecture designed for unpaired image-to-texture translation. The generated textures are stored in a texture atlas applied to the target 3D mesh geometry. To promote texture consistency, PUT employs an iterative procedure in which texture synthesis is conditioned on previously generated, adjacent textures. We demonstrate both quantitative and qualitative evaluation of the generated textures.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@inproceedings{Selvaraju:2021:BuildingNet,
+  author = {Pratheba Selvaraju and Mohamed Nabail and Marios Loizou and Maria Maslioukova and Melinos Averkiou and Andreas Andreou and Siddhartha Chaudhuri and Evangelos Kalogerakis},
+  booktitle = {ICCV},
+  title = {BuildingNet: Learning to Label 3D Buildings},
+  year = {2021},
+  pages = {10377-10387},
+  keywords = {point cloud compression;solid modeling;analytical models;three-dimensional displays;buildings;semantics;benchmark testing},
+  doi = {10.1109/ICCV48922.2021.01023},
+  url = {https://doi.ieeecomputersociety.org/10.1109/ICCV48922.2021.01023},
+  month = {oct},
+  abstract = {We introduce BuildingNet: (a) a large-scale dataset of 3D building models whose exteriors are consistently labeled, and (b) a graph neural network that labels building meshes by analyzing spatial and structural relations of their geometric primitives. To create our dataset, we used crowdsourcing combined with expert guidance, resulting in 513K annotated mesh primitives, grouped into 292K semantic part components across 2K building models. The dataset covers several building categories, such as houses, churches, skyscrapers, town halls, libraries, and castles. We include a benchmark for evaluating mesh and point cloud labeling. Buildings have more challenging structural complexity compared to objects in existing benchmarks (e.g., ShapeNet, PartNet), thus, we hope that our dataset can nurture the development of algorithms that are able to cope with such large-scale geometric data for both vision and graphics tasks e.g., 3D semantic segmentation, part-based generative models, correspondences, texturing, and analysis of point cloud data acquired from real-world buildings. Finally, we show that our mesh-based graph neural network significantly improves performance over several baselines for labeling 3D meshes. Our project page www.buildingnet.org includes our dataset and code.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+%%% 2020
+
+@article{Loizou:2020:PB-DGCNN,
+  author = {Marios Loizou and Melinos Averkiou and Evangelos Kalogerakis},
+  title = {Learning Part Boundaries from 3D Point Clouds},
+  journal = {CGF_SGP},
+  volume = {39},
+  number = {5},
+  pages = {183-195},
+  keywords = {CCS Concepts, • Computing methodologies → Neural networks, Point-based models, Shape analysis},
+  doi = {https://doi.org/10.1111/cgf.14078},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.14078},
+  eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.14078},
+  abstract = {We present a method that detects boundaries of parts in 3D shapes represented as point clouds. Our method is based on a graph convolutional network architecture that outputs a probability for a point to lie in an area that separates two or more parts in a 3D shape. Our boundary detector is quite generic: it can be trained to localize boundaries of semantic parts or geometric primitives commonly used in 3D modeling. Our experiments demonstrate that our method can extract more accurate boundaries that are closer to ground-truth ones compared to alternatives. We also demonstrate an application of our network to fine-grained semantic shape segmentation, where we also show improvements in terms of part labeling performance.},
+  year = {2020}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+%%% 2018
+
+@inproceedings{Lin:2018:MatNet,
+  author = {Hubert Lin and Melinos Averkiou and Evangelos Kalogerakis and Balazs Kovacs and Siddhant Ranade and Vladimir Kim and Siddhartha Chaudhuri and Kavita Bala},
+  booktitle = {3DV},
+  title = {Learning Material-Aware Local Descriptors for 3D Shapes},
+  year = {2018},
+  pages = {150-159},
+  keywords = {shape;three-dimensional displays;metals;training;plastics;benchmark testing;geometry},
+  doi = {10.1109/3DV.2018.00027},
+  url = {https://doi.ieeecomputersociety.org/10.1109/3DV.2018.00027},
+  month = {sep},
+  abstract = {Material understanding is critical for design, geometric modeling, and analysis of functional objects. We enable material-aware 3D shape analysis by employing a projective convolutional neural network architecture to learn material-aware descriptors from view-based representations of 3D points for point-wise material classification or material-aware retrieval. Unfortunately, only a small fraction of shapes in 3D repositories are labeled with physical materials, posing a challenge for learning methods. To address this challenge, we crowdsource a dataset of 3080 3D shapes with part-wise material labels. We focus on furniture models which exhibit interesting structure and material variability. In addition, we also contribute a high-quality expert-labeled benchmark of 115 shapes from Herman-Miller and IKEA for evaluation. We further apply a mesh-aware conditional random field, which incorporates rotational and reflective symmetries, to smooth our local material predictions across neighboring surface patches. We demonstrate the effectiveness of our learned descriptors for automatic texturing, material-aware retrieval, and physical simulation.}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+%%% 2017
+
+@inproceedings{Kalogerakis:2017:ShapePFCN,
+  author = {Evangelos Kalogerakis and Melinos Averkiou and Subhransu Maji and Siddhartha Chaudhuri},
+  booktitle = {CVPR},
+  title = {3D Shape Segmentation with Projective Convolutional Networks},
+  year = {2017},
+  issn = {1063-6919},
+  pages = {6630-6639},
+  keywords = {shape;three-dimensional displays;image segmentation;surface treatment;labeling;cognition},
+  doi = {10.1109/CVPR.2017.702},
+  url = {https://doi.ieeecomputersociety.org/10.1109/CVPR.2017.702},
+  month = {jul},
+  abstract = {This paper introduces a deep architecture for segmenting 3D objects into their labeled semantic parts. Our architecture combines image-based Fully Convolutional Networks (FCNs) and surface-based Conditional Random Fields (CRFs) to yield coherent segmentations of 3D shapes. The image-based FCNs are used for efficient view-based reasoning about 3D object parts. Through a special projection layer, FCN outputs are effectively aggregated across multiple views and scales, then are projected onto the 3D object surfaces. Finally, a surface-based CRF combines the projected outputs with geometric consistency cues to yield coherent segmentations. The whole architecture (multi-view FCNs and CRF) is trained end-to-end. Our approach significantly outperforms the existing state-of-the-art methods in the currently largest segmentation benchmark (ShapeNet). Finally, we demonstrate promising segmentation results on noisy 3D shapes acquired from consumer-grade depth cameras.}
 }
+
+@article{Hu:2017:Style,
+  author = {Ruizhen Hu and Wenchao Li and Oliver Van Kaick and Hui Huang and Melinos Averkiou and Daniel Cohen-Or and Hao Zhang},
+  title = {Co-Locating Style-Defining Elements on 3D Shapes},
+  year = {2017},
+  issue_date = {June 2017},
+  volume = {36},
+  number = {3},
+  issn = {0730-0301},
+  url = {https://doi.org/10.1145/3092817},
+  doi = {10.1145/3092817},
+  abstract = {We introduce a method for co-locating style-defining elements over a set of 3D shapes. Our goal is to translate high-level style descriptions, such as “Ming” or “European” for furniture models, into explicit and localized regions over the geometric models that characterize each style. For each style, the set of style-defining elements is defined as the union of all the elements that are able to discriminate the style. Another property of the style-defining elements is that they are frequently occurring, reflecting shape characteristics that appear across multiple shapes of the same style. Given an input set of 3D shapes spanning multiple categories and styles, where the shapes are grouped according to their style labels, we perform a cross-category co-analysis of the shape set to learn and spatially locate a set of defining elements for each style. This is accomplished by first sampling a large number of candidate geometric elements and then iteratively applying feature selection to the candidates, to extract style-discriminating elements until no additional elements can be found. Thus, for each style label, we obtain sets of discriminative elements that together form the superset of defining elements for the style. We demonstrate that the co-location of style-defining elements allows us to solve problems such as style classification, and enables a variety of applications such as style-revealing view selection, style-aware sampling, and style-driven modeling for 3D shapes.},
+  journal = {TOG},
+  month = {jun},
+  articleno = {33},
+  numpages = {15},
+  keywords = {style-aware sampling, Style elements}
+}
+
+%%% 2016
+
+@article{Averkiou:2016:Autocorr,
+  author = {Melinos Averkiou and Vladimir G. Kim and Niloy J. Mitra},
+  title = {Autocorrelation Descriptor for Efficient Co-Alignment of 3D Shape Collections},
+  journal = {CGF},
+  volume = {35},
+  number = {1},
+  pages = {261-271},
+  keywords = {digital geometry processing, modeling, I.3.3 Computer Graphics: Computational Geometry and Object Modelling—Geometric algorithms},
+  doi = {https://doi.org/10.1111/cgf.12723},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12723},
+  eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.12723},
+  abstract = {Abstract Co-aligning a collection of shapes to a consistent pose is a common problem in shape analysis with applications in shape matching, retrieval and visualization. We observe that resolving among some orientations is easier than others, for example, a common mistake for bicycles is to align front-to-back, while even the simplest algorithm would not erroneously pick orthogonal alignment. The key idea of our work is to analyse rotational autocorrelations of shapes to facilitate shape co-alignment. In particular, we use such an autocorrelation measure of individual shapes to decide which shape pairs might have well-matching orientations; and, if so, which configurations are likely to produce better alignments. This significantly prunes the number of alignments to be examined, and leads to an efficient, scalable algorithm that performs comparably to state-of-the-art techniques on benchmark data sets, but requires significantly fewer computations, resulting in 2–16× speed improvement in our tests.},
+  year = {2016}
+}
+
+%%% 2015
+
+@phdthesis{Averkiou:2015:Phd,
+  author       = {Melinos Averkiou}, 
+  title        = {Data-driven Modelling of Shape Structure},
+  school       = {University College London},
+  year         = {2015},
+  month        = {aug},
+  abstract     = {In recent years, the study of shape structure has shown great promise, by taking steps towards exposing shape semantics and functionality to algorithms spanning a wide range of areas in computer graphics and vision. By shape structure, we refer to the set of parts that make a shape, the relations between these parts, and the ways in which they correspond and vary between shapes of the same family. These developments have been largely driven by the abundance of 3D data, with collections of 3D models becoming increasingly prominent and websites such as Trimble 3D Warehouse offering millions of free 3D models to the public. The ability to use large amounts of data inside these shape collections for discovering shape structure has made novel approaches to acquisition, modelling, fabrication, and recognition of 3D objects possible. Discovering and modelling the structure of shapes using such data is therefore of great importance. In this thesis we address the problem of discovering and modelling shape structure from large, diverse and unorganized shape collections. Our hypothesis is that by using the large amounts of data inside such shape collections we can discover and model shape structure, and thus use such information to enable structure-aware tools for 3D modelling, including shape exploration, synthesis and editing. We make three key contributions. First, we propose an efficient algorithm for co-aligning large and diverse collections of shapes, to tackle the first challenge in detecting shape structure, which is to place shapes in a common coordinate frame. Then, we introduce a method to parameterize shapes in terms of locations and sizes of their parts, and we demonstrate its application to concurrently exploring a shape collection and synthesizing new shapes. Finally, we define a meta-representation for a shape family, which models the relations of shape parts to capture the main geometric characteristics of the family, and we demonstrate how it can be used to explore shape collections and intelligently edit shapes.}
+}
+
+@inproceedings{Zheng:2015:manifold,
+  author={Zheng, Shuai and Prisacariu, Victor Adrian and Averkiou, Melinos and Cheng, Ming-Ming and Mitra, Niloy J. and Shotton, Jamie and Torr, Philip H. S. and Rother, Carsten},
+  editor={Gall, Juergen and Gehler, Peter and Leibe, Bastian},
+  title={Object Proposals Estimation in Depth Image Using Compact 3D Shape Manifolds},
+  booktitle={Pattern Recognition},
+  year={2015},
+  pages={196--208},
+  abstract={Man-made objects, such as chairs, often have very large shape variations, making it challenging to detect them. In this work we investigate the task of finding particular object shapes from a single depth image. We tackle this task by exploiting the inherently low dimensionality in the object shape variations, which we discover and encode as a compact shape space. Starting from any collection of 3D models, we first train a low dimensional Gaussian Process Latent Variable Shape Space. We then sample this space, effectively producing infinite amounts of shape variations, which are used for training. Additionally, to support fast and accurate inference, we improve the standard 3D object category proposal generation pipeline by applying a shallow convolutional neural network-based filtering stage. This combination leads to considerable improvements for proposal generation, in both speed and accuracy. We compare our full system to previous state-of-the-art approaches, on four different shape classes, and show a clear improvement.},
+  isbn={978-3-319-24947-6}
+}
+
+%%% 2014
+
+@article{Fish:2014:Metarep,
+  author = {Fish, Noa and Averkiou, Melinos and van Kaick, Oliver and Sorkine-Hornung, Olga and Cohen-Or, Daniel and Mitra, Niloy J.},
+  title = {Meta-Representation of Shape Families},
+  year = {2014},
+  issue_date = {July 2014},
+  volume = {33},
+  number = {4},
+  issn = {0730-0301},
+  url = {https://doi.org/10.1145/2601097.2601185},
+  doi = {10.1145/2601097.2601185},
+  abstract = {We introduce a meta-representation that represents the essence of a family of shapes. The meta-representation learns the configurations of shape parts that are common across the family, and encapsulates this knowledge with a system of geometric distributions that encode relative arrangements of parts. Thus, instead of predefined priors, what characterizes a shape family is directly learned from the set of input shapes. The meta-representation is constructed from a set of co-segmented shapes with known correspondence. It can then be used in several applications where we seek to preserve the identity of the shapes as members of the family. We demonstrate applications of the meta-representation in exploration of shape repositories, where interesting shape configurations can be examined in the set; guided editing, where models can be edited while maintaining their familial traits; and coupled editing, where several shapes can be collectively deformed by directly manipulating the distributions in the meta-representation. We evaluate the efficacy of the proposed representation on a variety of shape collections.},
+  journal = {SIGG},
+  month = {jul},
+  articleno = {34},
+  numpages = {11},
+  keywords = {consensus relations, shape collections, model editing}
+}
+
+@article{Zheng:2014:Reccuring,
+  author = {Zheng, Youyi and Cohen-Or, Daniel and Averkiou, Melinos and Mitra, Niloy J.},
+  title = {Recurring part arrangements in shape collections},
+  journal = {CGF_EG},
+  volume = {33},
+  number = {2},
+  pages = {115-124},
+  doi = {https://doi.org/10.1111/cgf.12309},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12309},
+  eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.12309},
+  abstract = {Abstract Extracting semantically related parts across models remains challenging, especially without supervision. The common approach is to co-analyze a model collection, while assuming the existence of descriptive geometric features that can directly identify related parts. In the presence of large shape variations, common geometric features, however, are no longer sufficiently descriptive. In this paper, we explore an indirect top-down approach, where instead of part geometry, part arrangements extracted from each model are compared. The key observation is that while a direct comparison of part geometry can be ambiguous, part arrangements, being higher level structures, remain consistent, and hence can be used to discover latent commonalities among semantically related shapes. We show that our indirect analysis leads to the detection of recurring arrangements of parts, which are otherwise difficult to discover in a direct unsupervised setting. We evaluate our algorithm on ground truth datasets and report advantages over geometric similarity-based bottom-up co-segmentation algorithms.},
+  year = {2014}
+}
+
+@article{Averkiou:2014:Shapesynth,
+  author = {Averkiou, Melinos and Kim, Vladimir G. and Zheng, Youyi and Mitra, Niloy J.},
+  title = {ShapeSynth: Parameterizing model collections for coupled shape exploration and synthesis},
+  journal = {CGF_EG},
+  volume = {33},
+  number = {2},
+  pages = {125-134},
+  doi = {https://doi.org/10.1111/cgf.12310},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.12310},
+  eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.12310},
+  abstract = {Abstract Recent advances in modeling tools enable non-expert users to synthesize novel shapes by assembling parts extracted from model databases. A major challenge for these tools is to provide users with relevant parts, which is especially difficult for large repositories with significant geometric variations. In this paper we analyze unorganized collections of 3D models to facilitate explorative shape synthesis by providing high-level feedback of possible synthesizable shapes. By jointly analyzing arrangements and shapes of parts across models, we hierarchically embed the models into low-dimensional spaces. The user can then use the parameterization to explore the existing models by clicking in different areas or by selecting groups to zoom on specific shape clusters. More importantly, any point in the embedded space can be lifted to an arrangement of parts to provide an abstracted view of possible shape variations. The abstraction can further be realized by appropriately deforming parts from neighboring models to produce synthesized geometry. Our experiments show that users can rapidly generate plausible and diverse shapes using our system, which also performs favorably with respect to previous modeling tools.},
+  year = {2014}
+}
+
+%%% 2011
+
+@inproceedings{Averkiou:2011:Comparison,
+  author = {Melinos Averkiou and Neil A. Dodgson},
+  title = {{Comparison of relative (mouse-like) and absolute (tablet-like) interaction with a large stereoscopic workspace}},
+  volume = {7863},
+  booktitle = {Stereoscopic Displays and Applications XXII},
+  editor = {Andrew J. Woods and Nicolas S. Holliman and Neil A. Dodgson},
+  organization = {International Society for Optics and Photonics},
+  publisher = {SPIE},
+  pages = {381 -- 392},
+  keywords = {stereoscopic, mouse, tablet, interaction, head-tracking},
+  year = {2011},
+  doi = {10.1117/12.872002},
+  URL = {https://doi.org/10.1117/12.872002}
+}
+
+
+
+
