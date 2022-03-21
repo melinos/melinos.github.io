@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: January 2020
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Visual Computing Group of RISE and Sony Semiconductor Solutions have initiated a collaboration in the area of Time-of-Flight (ToF) cameras. More details here.
