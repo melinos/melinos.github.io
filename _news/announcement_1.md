@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: June 2020
 inline: true
 ---
 
-A simple inline announcement.
+Our paper Learning Part Boundaries from 3D Point Clouds will be presented at SGP 2020. Check the project’s website for details including code and data.
