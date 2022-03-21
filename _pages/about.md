@@ -2,23 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Visual Computing Group leader @ <a href='https://www.cyens.org.cy/'>CYENS Centre of Excellence</a>. Research Scientist @ <a href='https://www.ucy.ac.cy/'>University of Cyprus</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>1 University Avenue, Building FFT01, room 122</p>
+    <p>2109 Nicosia</p>
+    <p>Cyprus</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to my personal website !
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am currently the Visual Computing Group (VCG) at CYENS Center of Excellence where I lead a team of research scientists working on visual computing. I am also a Senior Research Scientist in the Department of Computer Science of the University of Cyprus, where I carry out research, supervise post-graduate students and teach courses in the broad area of visual computing. My research spans the areas of computer vision, machine learning, and computer graphics, focusing on data-driven methods for learning semantics from 3D and 2D data. I am especially interested in deep learning architectures to acquire, model, and understand the semantics of real-world environments at multiple scales, ranging from single objects, indoor scenes, buildings, and ultimately entire cities. This knowledge can be used to power intelligent tools for scene understanding which have important applications in artificial intelligence, robotics, augmented reality and virtual reality. Have a look at my publications for more information.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I got an MPhil in Advanced Computer Science from the University of Cambridge in 2010, before going to University College London where I got a PhD in 2015, working in the Smart Geometry Processing Group. I was supervised by Professor Niloy Mitra, working on collections of 3D objects to develop novel representations and shape analysis algorithms for understanding, learning and using object structure. I then joined the University of Cyprus for a Postdoc, where I focused on deep learning for 3D geometry, including segmentation and style identification. 
+
+I grew up in Cyprus, a tiny island in the Eastern Mediterranean. Have a look at my CV for more information.
