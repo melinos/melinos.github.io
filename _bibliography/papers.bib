@@ -20,8 +20,84 @@
   title = {A 3D digitisation workflow for architecture-specific annotation of built heritage},
   journal = {Journal of Archaeological Science: Reports},
   year = {2021},
-  abstract = {Contemporary discourse points to the central role that heritage plays in the process of enabling groups of various cultural or ethnic background to strengthen their feeling of belonging and sharing in society. Safeguarding heritage is also valued highly in the priorities of the European Commission. As a result, there have been several long-term initiatives involving the digitisation, annotation and cataloguing of tangible cultural heritage in museums and collections. Specifically, for built heritage, a pressing challenge is that historical monuments such as buildings, temples, churches or city fortification infrastructures are hard to document due to their historic palimpsest; spatial transformations, actions of destruction, reuse of material, or continuous urban development that covers traces and changes the formal integrity and identity of a cultural heritage site. The ability to reason about a monument’s form is crucial for efficient documentation and cataloguing. This paper presents a 3D digitisation workflow through the involvement of reality capture technologies for the annotation and structure analysis of built heritage with the use of 3D Convolutional Neural Networks (3D CNNs) for classification purposes. The presented workflow contributes a new approach to the identification of a building’s architectural components (e.g., arch, dome) and to the study of the stylistic influences (e.g., Gothic, Byzantine) of building parts. In doing so this workflow can assist in tracking a building’s history, identifying its construction period and comparing it to other buildings of the same period. This process can contribute to educational and research activities, as well as facilitate the automated classification of datasets in digital repositories for scholarly research in digital humanities.}
+  abstract = {Contemporary discourse points to the central role that heritage plays in the process of enabling groups of various
+			  cultural or ethnic background to strengthen their feeling of belonging and sharing in society. Safeguarding heritage 
+			  is also valued highly in the priorities of the European Commission. As a result, there have been several long-term 
+			  initiatives involving the digitisation, annotation and cataloguing of tangible cultural heritage in museums and 
+			  collections. Specifically, for built heritage, a pressing challenge is that historical monuments such as buildings, 
+			  temples, churches or city fortification infrastructures are hard to document due to their historic palimpsest; spatial 
+			  transformations, actions of destruction, reuse of material, or continuous urban development that covers traces and 
+			  changes the formal integrity and identity of a cultural heritage site. The ability to reason about a monument’s form 
+			  is crucial for efficient documentation and cataloguing. This paper presents a 3D digitisation workflow through the 
+			  involvement of reality capture technologies for the annotation and structure analysis of built heritage with the use 
+			  of 3D Convolutional Neural Networks (3D CNNs) for classification purposes. The presented workflow contributes a new 
+			  approach to the identification of a building’s architectural components (e.g., arch, dome) and to the study of the 
+			  stylistic influences (e.g., Gothic, Byzantine) of building parts. In doing so this workflow can assist in tracking 
+			  a building’s history, identifying its construction period and comparing it to other buildings of the same period. 
+			  This process can contribute to educational and research activities, as well as facilitate the automated classification 
+			  of datasets in digital repositories for scholarly research in digital humanities.},
   volume = {37},
-  url = {https://www.sciencedirect.com/science/article/pii/S2352409X20305782},  
+  url = {https://www.sciencedirect.com/science/article/pii/S2352409X20305782},
+  abbr = {J.Archaeol.Sci.R},  
   selected = True
+}
+
+@inproceedings{Selvaraju:2021:BuildingNet, 
+  author    = {Selvaraju, P. and Nabail, M. and Loizou, M. and Maslioukova, M. and
+               Averkiou, M. and Andreou, A. and Chaudhuri, S. and Kalogerakis, E.},
+  title     = {BuildingNet: Learning to Label 3D Buildings},
+  booktitle = ICCV,
+  year      = {2021},
+  abstract  = {We introduce BuildingNet: (a) a large-scale dataset of
+			   3D building models whose exteriors are consistently labeled,
+			   and (b) a graph neural network that labels building meshes
+			   by analyzing spatial and structural relations of their geometric
+			   primitives. To create our dataset, we used crowdsourcing combined
+			   with expert guidance, resulting in 513K annotated mesh primitives,
+			   grouped into 292K semantic part components across 2K building models.
+			   The dataset covers several building categories, such as houses, 
+			   churches, skyscrapers, town halls, libraries, and castles. We include 
+			   a benchmark for evaluating mesh and point cloud labeling. Buildings
+			   have more challenging structural complexity compared to objects in
+			   existing benchmarks (e.g., ShapeNet, PartNet), thus, we hope that 
+			   our dataset can nurture the development of algorithms that are able 
+			   to cope with such large-scale geometric data for both vision and
+			   graphics tasks e.g., 3D semantic segmentation, part-based generative
+			   models, correspondences, texturing, and analysis of point cloud data
+			   acquired from real-world buildings. Finally, we show that our mesh-based
+			   graph neural network significantly improves performance over several
+			   baselines for labeling 3D meshes. Our project page www.buildingnet.org
+			   includes our dataset and code.},
+  website   = {https://buildingnet.org/},
+  code      = {https://github.com/buildingnet/buildingnet_dataset},
+  pdf		= {https://arxiv.org/pdf/2110.04955.pdf},
+  img		= {../assets/img/buildingnet.jpg},
+  video     = {https://www.youtube.com/watch?v=rl30WJo_EBo&ab_channel=EvangelosKalogerakis},
+  selected  = True
+}
+
+%%% 2020
+
+@article{Loizou:2021:PB-DGCNN:,
+  author    = {Loizou, M. and Averkiou, M. and Kalogerakis, E},
+  title     = {Learning Part Boundaries from 3D Point Clouds},
+  journal   = CGF_SGP,	
+  year      = {2020},
+  abstract  = {We present a method that detects boundaries of parts in 3D shapes represented as 
+			   point clouds. Our method is based on a graph convolutional network architecture that
+			   outputs a probability for a point to lie in an area that separates two or more parts
+			   in a 3D shape. Our boundary detector is quite generic: it can be trained to localize
+			   boundaries of semantic parts or geometric primitives commonly used in 3D modeling.
+			   Our experiments demonstrate that our method can extract more accurate boundaries that
+			   are closer to ground-truth ones compared to alternatives. We also demonstrate an
+			   application of our network to fine-grained semantic shape segmentation, where we also
+			   show improvements in terms of part labeling performance.},
+  volume    = {39},
+  number    = {5},
+  website   = {https://marios2019.github.io/learning_part_boundaries/},
+  code      = {https://github.com/marios2019/learning_part_boundaries},
+  pdf		= {https://arxiv.org/pdf/2007.07563.pdf},
+  img       = {../assets/img/pb_dgcnn.jpg},
+  video		= {https://www.youtube.com/watch?v=pyCZiK28nl0&ab_channel=MariosLoizou},
+  selected  = True
 }
