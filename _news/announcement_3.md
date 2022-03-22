@@ -1,7 +1,7 @@
 ---
 layout: post
-date: January 2020
+date: January 2021
 inline: true
 ---
 
-Visual Computing Group of RISE and Sony Semiconductor Solutions have initiated a collaboration in the area of Time-of-Flight (ToF) cameras. More details here.
+Our proposal to the Cyprus Research and Innovation Foundation PRE-SEED call was funded with 100k euros. More details [here](https://mindxs.com/).
