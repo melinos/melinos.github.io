@@ -25,4 +25,4 @@ My research spans the areas of computer vision, machine learning, and computer g
 
 I got an MPhil in Advanced Computer Science from the University of Cambridge in 2010, before going to University College London where I got a PhD in 2015, working in the [Smart Geometry Processing Group](http://geometry.cs.ucl.ac.uk/). I was supervised by Professor Niloy Mitra, working on collections of 3D objects to develop novel representations and shape analysis algorithms for modelling, learning and using object structure. I then joined the University of Cyprus for a Postdoc, where I focused on deep learning for 3D shape analysis, including [semantic segmentation](http://people.cs.umass.edu/~kalo/papers/shapepfcn/index.html) and [style recognition](http://vcc.szu.edu.cn/research/2017/style/). 
 
-I grew up in Cyprus, a tiny island in the Eastern Mediterranean. Have a look at my [CV](https://melinos.github.io/assets/pdf/Averkiou-CV.pdf) for more information.
+I grew up in Cyprus, a tiny island in the Eastern Mediterranean. Have a look at my [CV](https://melinos.github.io/assets/pdf/averkiou_cv.pdf) for more information.
