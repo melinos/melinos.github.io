@@ -7,10 +7,6 @@ subtitle: Group leader @ <a href='https://www.cyens.org.cy/'>CYENS Centre of Exc
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    #<p>1 University Avenue, Building FFT01, room 122</p>
-    #<p>2109 Nicosia</p>
-    #<p>Cyprus</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
