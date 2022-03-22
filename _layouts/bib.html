@@ -9,7 +9,7 @@
 			<!--">-->
 		  {%- endif -%}
         {%- if entry.abbr -%}
-		  <div class="abbr" style="text-align: center">
+		  <div class="abbr" style="text-align: right">
           {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
           {%- else -%}
