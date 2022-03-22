@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SMI 2020
-date: January 2020
+title: PUT 3DV 2021
+date: December 2021
 inline: true
 ---
 
-I am serving as a member of the program committee for Shape Modeling International (SMI) 2020.
+Our paper Projective Urban Texturing will be presented at 3DV 2021. Check the project’s [website](https://ygeorg01.github.io/PUT/) for details including [code](https://github.com/ygeorg01/PUT) and data.
