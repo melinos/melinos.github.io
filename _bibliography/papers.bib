@@ -6,6 +6,7 @@
 @string{THREEDV={Proc. 3DV}}
 @string{TOG={ACM TOG}}
 @string{SIGG={ACM TOG (Proc. SIGGRAPH)}}
+@string{SIGG_C={Proc. SIGGRAPH}}
 @string{WACV={Proc. WACV}}
 
 @string{SGP={Proc. SGP}}
@@ -17,27 +18,33 @@
 
 %%% 2024
 
-@misc{Petrov:2024:GEM3D,
+@inproceedings{Petrov:2024:GEM3D,
       title={GEM3D: GEnerative Medial Abstractions for 3D Shape Synthesis}, 
       author={Dmitry Petrov and Pradyumn Goyal and Vikas Thamizharasan and  Vladimir G. Kim and Matheus Gadelha and Melinos Averkiou and Siddhartha Chaudhuri and Evangelos Kalogerakis},
       year={2024},
-      eprint={2402.16994},
-      archivePrefix={arXiv},
-	primaryClass={cs.CV},
-	website   = {https://lodurality.github.io/GEM3D/},
-	code      = {https://lodurality.github.io/GEM3D/},
-	pdf		= {https://lodurality.github.io/GEM3D/static/GEM3D_website.pdf},
-	img		= {https://lodurality.github.io/GEM3D/static/images/teaser/03001627_gen_skel_seed_205_render0001.png},
-	selected  = True
+      booktitle=SIGG_C,
+      abstract= {We introduce GEM3D — a new deep, topology-aware generative model of 3D shapes.
+	The key ingredient of our method is a neural skeleton-based representation encoding information on both shape topology and geometry. 
+	Through a denoising diffusion probabilistic model, our method first generates skeleton-based representations following the Medial Axis Transform (MAT), 
+	then generates surfaces through a skeleton-driven neural implicit formulation. The neural implicit takes into account the topological and geometric information 
+	stored in the generated skeleton representations to yield surfaces that are more topologically and geometrically accurate compared to previous neural field formulations.
+	We discuss applications of our method in shape synthesis and point cloud reconstruction tasks, and evaluate our method both qualitatively and quantitatively. 
+	We demonstrate significantly more faithful surface reconstruction and diverse shape generation results compared to the state-of-the-art, also involving challenging scenarios 
+	of reconstructing and synthesizing structurally complex, high-genus shape surfaces from Thingi10K and ShapeNet.},
+      website   = {https://lodurality.github.io/GEM3D/},
+      code      = {https://lodurality.github.io/GEM3D/},
+      pdf	= {https://lodurality.github.io/GEM3D/static/GEM3D_website.pdf},
+      img	= {https://lodurality.github.io/GEM3D/static/images/teaser/03001627-205-0_render0001.png},
+      selected  = True
 }
 
 @inproceedings{Georgiou:2024:FacadeNet,
-  author    = {Georgiou, Y. and Loizou, M. and Kelly, T. and Averkiou, M.},
+  author    = {Georgiou, Yiangos and Loizou, Marios and Kelly, Tom and Averkiou, Melinos},
   title     = {FacadeNet: Conditional Facade Synthesis via Selective Editing},
   booktitle = WACV,
   year      = {2024},
   abstract  = {We introduce FacadeNet, a deep learning approach for synthesizing building
-			   facade images from diverse viewpoints. Our method employs a conditional GAN, taking a
+		 	facade images from diverse viewpoints. Our method employs a conditional GAN, taking a
 			   single view of a facade along with the desired viewpoint information and
 			   generates an image of the facade from the distinct viewpoint. To
 			   precisely modify view-dependent elements like windows and doors while
@@ -76,7 +83,7 @@
 }
 
 @article{Artopoulos:2023:ANNFASS,
-  	author    = {Artopoulos, G. and Maslioukova, M. I. and Zavou, C. and Loizou, M. and Deligiorgi, M. and Averkiou, M.},
+  	author = {Artopoulos, G. and Maslioukova, M. I. and Zavou, C. and Loizou, M. and Deligiorgi, M. and Averkiou, M.},
 	title = {An artificial neural network framework for classifying the style of cypriot hybrid examples of built heritage in 3D},
 	journal = JOCH,
 	volume = {63},
@@ -162,7 +169,7 @@
   pdf = {https://arxiv.org/pdf/2201.10938.pdf},
   img  = {../assets/img/3dv_2021.png},
   video = {https://www.youtube.com/watch?v=QN18pQsbXKQ&ab_channel=YiangosGeorgiou},
-  selected = True
+  selected = False
 }
 
 @inproceedings{Selvaraju:2021:BuildingNet, 
@@ -226,7 +233,7 @@
   pdf = {https://arxiv.org/pdf/2007.07563.pdf},
   img = {../assets/img/pb_dgcnn.jpg},
   video = {https://www.youtube.com/watch?v=pyCZiK28nl0&ab_channel=MariosLoizou},
-  selected  = True
+  selected  = False
 }
 
 %%% 2018
@@ -255,7 +262,7 @@
 			  our learned descriptors for automatic texturing, material-aware retrieval, and physical simulation.},
   pdf = {https://arxiv.org/pdf/1810.08729.pdf},
   img  = {../assets/img/3dv18.png},
-  selected = true
+  selected = False
 }
 
 %%% 2017
@@ -285,7 +292,7 @@
   pdf = {https://arxiv.org/pdf/1612.02808.pdf},
   img  = {../assets/img/cvpr17.jpg},
   video = {https://www.youtube.com/watch?v=zrd2uZjYbCw},
-  selected = true
+  selected = True
 }
 
 @article{Hu:2017:Style,
@@ -325,7 +332,7 @@
   code = {https://vcc.tech/file/upload_file//0/58//weboem_informations/Style_Datasets.zip},
   pdf = {https://vcc.tech/file/upload_file//0/58//weboem_informations/style.pdf},
   img  = {../assets/img/style.jpg},
-  selected = true
+  selected = False
 }
 
 %%% 2016
@@ -358,7 +365,7 @@
   code = {http://geometry.cs.ucl.ac.uk/projects/2015/coalignment/paper_docs/coalignment_code_data.7z},
   pdf = {http://geometry.cs.ucl.ac.uk/projects/2015/coalignment/paper_docs/coalignment_cgf15.pdf},
   img  = {../assets/img/eg2016.jpg},
-  selected = false
+  selected = False
 }
 
 %%% 2015
@@ -397,7 +404,7 @@
 				  be used to explore shape collections and intelligently edit shapes.},
   pdf = {http://geometry.cs.ucl.ac.uk/projects/2015/thesis_melinos/paper_docs/MelinosAverkiouPhdThesis.pdf},
   img  = {../assets/img/thesis.jpg},
-  selected = false
+  selected = False
 }
 
 @inproceedings{Zheng:2015:manifold,
@@ -456,7 +463,7 @@
   code = {http://geometry.cs.ucl.ac.uk/projects/2014/meta-representation/downloads/MR_Code_Data.zip},
   img  = {../assets/img/metarep.jpg},
   video = {https://www.youtube.com/watch?v=JoLmZtC1TCM&ab_channel=NiloyJ.Mitra},
-  selected = true
+  selected = False
 }
 
 @article{Zheng:2014:Reccuring,
@@ -483,7 +490,7 @@
   pdf = {http://www.cad.zju.edu.cn/home/zyy/docs/recurringArrangements_eg14.pdf},
   img  = {../assets/img/eg14.jpg},
   video = {https://www.youtube.com/watch?v=QeMVD3A-QMo&ab_channel=NiloyJ.Mitra},
-  selected = false
+  selected = False
 }
 
 @article{Averkiou:2014:Shapesynth,
@@ -511,7 +518,7 @@
   pdf = {http://vecg.cs.ucl.ac.uk/Projects/SmartGeometry/shape_synth/paper_docs/shapeSynth_eg14.pdf},
   img  = {../assets/img/shapesynth.jpg},
   video = {https://www.youtube.com/watch?v=2gYDAe1WFJY&ab_channel=NiloyJ.Mitra},
-  selected = false
+  selected = False
 }
 
 %%% 2011
@@ -542,7 +549,7 @@
   pdf = {https://www.researchgate.net/publication/241378239_Comparison_of_relative_mouse-like_and_absolute_tablet-like_interaction_with_a_large_stereoscopic_workspace},
   img  = {../assets/img/sda11.jpg},
   video = {https://www.youtube.com/watch?v=32J0PxAe6Uc&ab_channel=ZeebaTV},
-  selected = false
+  selected = False
 }
 
 
