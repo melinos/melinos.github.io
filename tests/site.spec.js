@@ -22,6 +22,12 @@ test("home page is current, responsive, and navigable", async ({ page }, testInf
   await expect(page.getByText("Im2SurfTex", { exact: true }).first()).toBeVisible();
   await expect(page.getByText("ShapeWords", { exact: true }).first()).toBeVisible();
 
+  const news = page.locator(".news .table-responsive");
+  await expect(news.locator("tr")).toHaveCount(5);
+  await expect(news).not.toHaveAttribute("style", /max-height/);
+  const newsIsClipped = await news.evaluate((element) => element.scrollHeight > element.clientHeight + 1);
+  expect(newsIsClipped).toBeFalsy();
+
   const profileImage = page.locator(".profile img");
   await expect(profileImage).toBeVisible();
   await expect.poll(() => profileImage.evaluate((image) => image.naturalWidth)).toBeGreaterThan(0);
@@ -71,4 +77,12 @@ test("CV PDF is linked and available", async ({ page, request }) => {
   const response = await request.get("/assets/pdf/averkiou_cv.pdf");
   expect(response.ok()).toBeTruthy();
   expect(response.headers()["content-type"]).toContain("application/pdf");
+});
+
+test("news archive is available", async ({ page }) => {
+  await page.goto("/news/");
+  await expect(page.getByRole("heading", { level: 1, name: "news" })).toBeVisible();
+  await expect(page.locator(".news tr")).toHaveCount(9);
+  await expect(page.getByText(/EASE/).first()).toBeVisible();
+  await expectNoHorizontalOverflow(page);
 });

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Associate (Research) Professor @ <a href="https://www.cyens.org.cy/">CYENS Centre of Excellence</a> • Adjunct Research Scientist @ <a href="https://www.ucy.ac.cy/">University of Cyprus</a> • Co-founder @ <a href="https://mindxs.com/">MindXs</a>
+subtitle: Associate (Research) Professor @ <a href="https://www.cyens.org.cy/">CYENS Centre of Excellence</a> • Adjunct Research Scientist @ <a href="https://www.ucy.ac.cy/">University of Cyprus</a>
 
 profile:
   align: right
@@ -15,7 +15,7 @@ social: true
 
 announcements:
   enabled: true
-  scrollable: true
+  scrollable: false
   limit: 5
 
 latest_posts:
@@ -24,9 +24,9 @@ latest_posts:
 
 Welcome to my personal website.
 
-I am an Associate (Research) Professor and Group Leader of the Visual Computing Group (VCG) at the CYENS Centre of Excellence in Cyprus, where I supervise a team of PhD students working in artificial intelligence (AI). As an Adjunct Research Scientist at the University of Cyprus, I supervise postgraduate students and teach courses in AI topics such as deep learning and computer vision. I am also the co-founder and R&D Director of MindXs, a health-tech startup using AI to automate EEG brain-signal analysis.
+I am an Associate (Research) Professor and Group Leader of the Visual Computing Group (VCG) at the CYENS Centre of Excellence in Cyprus, where I supervise a team of PhD students working in artificial intelligence (AI). As an Adjunct Research Scientist at the University of Cyprus, I supervise postgraduate students and teach courses in deep learning and computer vision.
 
-My research lies at the intersection of machine learning and computer vision, with a focus on discriminative and generative deep neural models for 3D vision. I develop methods for understanding real-world environments and generating virtual environments across multiple scales, from objects to buildings and entire cities. This work supports applications in engineering, robotics, extended reality, autonomous systems, urban planning, remote sensing, and healthcare. See my [publications](/publications/) for more information.
+My research focuses on structure-aware AI for understanding real-world environments and generating virtual ones. I develop discriminative models that recover geometry, semantics, and relationships from images and 3D data, and generative models that use this structure to produce more controllable and faithful outputs. The broader goal is to bridge the gap between real and virtual worlds, from objects and garments to buildings and cities, with applications in spatial AI, digital twins, engineering, robotics, and extended reality. See my [publications](/publications/) for more information.
 
 I earned an MPhil in Advanced Computer Science from the University of Cambridge and a PhD from University College London, where I worked on machine learning for discovering shape structure. I was a founding member of the [Smart Geometry Processing Group](https://geometry.cs.ucl.ac.uk/), supervised by Prof. Niloy Mitra. After my PhD, I joined the University of Cyprus as a research scientist and worked on deep learning for shape understanding, including [semantic segmentation](https://people.cs.umass.edu/~kalo/papers/shapepfcn/index.html) and [style recognition](https://vcc.szu.edu.cn/research/2017/style/).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FacadeNet WACV 2024
-date: 2023-10-26
+date: 2023-10-24
 inline: true
 ---
 
