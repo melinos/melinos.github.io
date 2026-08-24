@@ -1,0 +1,8 @@
+**/*.map
+**/*.min.css
+**/*.min.js
+_site/
+node_modules/
+test-results/
+al-folio-upgrade-report.md
+assets/libs/

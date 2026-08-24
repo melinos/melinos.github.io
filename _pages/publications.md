@@ -2,16 +2,19 @@
 layout: page
 permalink: /publications/
 title: publications
-description:
-years: [2024, 2023, 2021, 2020, 2018, 2017, 2016, 2015, 2014, 2011]
+description: Peer-reviewed publications and research papers in computer vision, machine learning, and 3D vision.
 nav: true
+nav_order: 1
 ---
+
 <!-- _pages/publications.md -->
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
 <div class="publications">
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+{% bibliography %}
 
 </div>
