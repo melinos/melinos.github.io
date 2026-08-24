@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "purge:css": "purgecss -c purgecss.config.js",
+    "test:site": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "@shopify/prettier-plugin-liquid": "1.10.0",
+    "prettier": "3.8.0",
+    "purgecss": "8.0.0"
+  }
+}
